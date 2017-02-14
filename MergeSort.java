@@ -18,6 +18,8 @@
 
 public class MergeSort {
 
+    int passes =0;
+    public 
    /******************************************************
      * int[] merge(int[],int[]) 
      * Merges two input arrays
@@ -25,13 +27,14 @@ public class MergeSort {
      * Postcond: Input arrays unchanged, and 
      * output array sorted in ascending order.
      ******************************************************/
-    private static int[] merge( int[] a, int[] b ) 
+    private  int[] merge( int[] a, int[] b ) 
     { 
 	int[] retArr = new int[a.length + b.length];
 	int aCounter = 0;
 	int bCounter = 0;
 	int index = 0;
         while (aCounter < a.length  && bCounter < b.length){
+	    passes += 1;
 	    if (a[aCounter] < b[bCounter]){
 		retArr[index] = a[aCounter];
 		index++;
@@ -45,12 +48,14 @@ public class MergeSort {
 	}
 	if (aCounter < a.length){
 	    for (int x = aCounter; x < a.length; x++){
+		passes ++;
 		retArr[index] = a[x];
 		index++;
 	    }
 	}
 	else if (bCounter < b.length){
 	    for (int x = bCounter; x < b.length; x++){
+		passes ++;
 		retArr[index] = b[x];
 		index++;
 	    }
@@ -66,6 +71,7 @@ public class MergeSort {
      ******************************************************/
     public static int[] sort( int[] arr ) 
     {
+	passes ++;
 	if (arr.length == 1){
 	    return arr;
 	}
