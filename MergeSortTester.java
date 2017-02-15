@@ -20,6 +20,7 @@
   n=1000    time: 
 
   ANALYSIS:
+  Because merge sort invovles an array continually dividing itself in 2 untill it reaches arrays of length one it xontains O(logn) run time. However, since each merge operation is done in linear time, as a whole merge sorts is O(nlogn). It must be noted that the actual splitting of an array is done in constant run time. 
     
   ======================================*/
 
