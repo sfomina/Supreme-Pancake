@@ -30,8 +30,8 @@ public class MergeSortTester
      ******************************/
 
     public static long time(int[] arr){
-	long time = System.nanoTime();
 	MergeSort runner = new MergeSort();
+	long time = System.nanoTime();
 	runner.sort(arr);
 	time = System.nanoTime() - time;
 	return time;
