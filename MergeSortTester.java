@@ -42,6 +42,7 @@ public class MergeSortTester
     {
 	int[] test1= new int [1];
 	int[] test10 = new int [10];
+	int[] test5 = new int [5];
 	int[] test50 = new int [50];
 	int[] test100 = new int[100];
 	int[] test1000 = new int[1000];
@@ -49,6 +50,7 @@ public class MergeSortTester
 	double a = 0;
 	double b = 0;
 	double time1 = 0;
+	double time5 = 0;
 	double time10 = 0;
 	double time50 = 0;
 	double time100 = 0;
@@ -94,6 +96,31 @@ public class MergeSortTester
 
 	    System.out.println("Time: " + (b - a));
 	    time10 += b-a;
+	    counter ++;
+	}
+
+	System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+	System.out.println("~~~~~~~~~~ARRAY n=5~~~~~~~~~~~~~~");
+	counter = 0;
+	while (counter<9){
+	    //populate a 5 item array
+	    int p = 0;
+	    while(p<5){
+		test5[p] = (int) (Math.random() * 50);
+		p++;
+	    }
+	    System.out.println("Testing on array ");
+	    MergeSort.printArray(test5);
+	    System.out.print(" ....\n");
+
+	    //start stopwatch
+	    a = System.currentTimeMillis();
+	    MergeSort.sort(test5);
+	    b= System.currentTimeMillis();
+
+	    System.out.println("Time: " + (b - a));
+	    time5 += b-a;
 	    counter ++;
 	}
 
@@ -174,7 +201,8 @@ public class MergeSortTester
 
 	System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
 	
-	System.out.println("AVG TIME FOR n=1:" + (time1 *1.0 / 10));	
+	System.out.println("AVG TIME FOR n=1:" + (time1 *1.0 / 10));
+	System.out.println("AVG TIME FOR n=5:" + (time5 *1.0 / 10));		
 	System.out.println("AVG TIME FOR n=10:" + (time10 *1.0 / 10));
 	System.out.println("AVG TIME FOR n=50:" + (time50 *1.0 / 10));
 	System.out.println("AVG TIME FOR n=100:" + (time100 *1.0 / 10));
