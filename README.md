@@ -14,4 +14,4 @@ n  Runtime (milliseconds)
 
 1000	643
 
-Judging from the shape of the graph, we can safely conclude that the runtime of mergesort is O(N); it is linear. 
+Judging from the shape of the graph, we can safely conclude that the runtime of mergesort is O(nlog(n)); it is log linear.  It looks like a steep line when zoomed out but when zoomed in the range of small numbers it appears as log linear
