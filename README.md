@@ -3,9 +3,9 @@ Based on running the mergesort algorithm on many arrays of different lengths, an
 Using this data, a graph was plotted to represent it visually. The link is here: https://docs.google.com/spreadsheets/d/1nJfYaayP-T9ycAJQCTNdA-V1wZZR--OjntgAycNBkzo/edit?usp=sharing
 The data we've acquired is as follows:
 
-![Alt text](../graphs.pngraw=true "Optional Title")
 
 
+![Alt text](/../Supreme-Pancake/graphs.png?raw=true "Optional Title")
 
 
 
