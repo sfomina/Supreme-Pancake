@@ -69,7 +69,7 @@ public class MergeSortTester
 	    time1 += b-a;
 	    counter ++;
 	}
-	System.out.println("AVG TIME FOR n=1:" + (time1 *1.0 / 10));
+
 	System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
 
 	System.out.println("~~~~~~~~~~ARRAY n=10~~~~~~~~~~~~~~");
@@ -94,7 +94,7 @@ public class MergeSortTester
 	    time10 += b-a;
 	    counter ++;
 	}
-	System.out.println("AVG TIME FOR n=10:" + (time10 *1.0 / 10));
+
 	System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
 
        	System.out.println("~~~~~~~~~~ARRAY n=50~~~~~~~~~~~~~~");
@@ -119,10 +119,12 @@ public class MergeSortTester
 	    time50 += b-a;
 	    counter ++;
 	}
-	System.out.println("AVG TIME FOR n=50:" + (time50 *1.0 / 10));
+
 	System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
 	
-	
+	System.out.println("AVG TIME FOR n=1:" + (time1 *1.0 / 10));	
+	System.out.println("AVG TIME FOR n=10:" + (time10 *1.0 / 10));
+	System.out.println("AVG TIME FOR n=50:" + (time50 *1.0 / 10));
 	/*
 	System.out.println("Standard nlogn time when n is 9");
 	System.out.println("Time merge sort takes to sort array of length 9");
