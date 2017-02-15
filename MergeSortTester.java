@@ -29,15 +29,18 @@ public class MergeSortTester
      *  TIME DATA...>
      ******************************/
 
-    public static long time(MergeSort runner, int[] arr){
-	long time = System.currentTimeMillis();
+    public static long time(int[] arr){
+	long time = System.nanoTime();
+	MergeSort runner = new MergeSort();
 	runner.sort(arr);
-	time = System.currentTimeMillis() - time;
+	time = System.nanoTime() - time;
 	return time;
     }
+    
     public static void main( String[] args ) 
     {
-
+	int[] test1 = {9,6,7,2,8,5,1,3,4};
+	System.out.println(time(test1));
     }//end main
 
 }//end class
