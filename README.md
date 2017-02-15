@@ -9,4 +9,4 @@ The data we've acquired is as follows (in the data table other graphs are for re
 
 
 
- As seen in the image, the run time of merge sort increases at a slower rate than y = n, but appears to be linear.
+ As seen in the image, the run time of merge sort appears to be linear but when lookin closely and in particulr zooming into the smaller ranges one can see that the runtime of merge sort is O(nlog(n)). By playing with the coefficients of y = nlog(n), it becomes more clear that this is, in fact, corresponds to the data gathered.
