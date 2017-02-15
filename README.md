@@ -5,7 +5,7 @@ The data we've acquired is as follows:
 
 
 
-![Alt text](/../Supreme-Pancake/graphs.png?raw=true "Optional Title")
+![Alt text](/../Supreme-Pancake/graphs.pngraw=true "Optional Title")
 
 
 
