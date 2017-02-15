@@ -29,9 +29,11 @@ public class MergeSortTester
      *  TIME DATA...>
      ******************************/
 
-    public static int time(MergeSort run){
-	int sec = 0;
-	return sec;
+    public static long time(MergeSort runner, int[] arr){
+	long time = System.currentTimeMillis();
+	runner.sort(arr);
+	time = System.currentTimeMillis() - time;
+	return time;
     }
     public static void main( String[] args ) 
     {
