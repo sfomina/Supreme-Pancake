@@ -1,10 +1,14 @@
 /*======================================
   class MergeSortTester
 
-  ALGORITHM:
-  <INSERT YOUR DISTILLATION OF ALGO HERE>
+  ALGORITHM: 
+  - will return input arr if length is equal to 1
+  - splits the input array into half, until the length of the parts is 1
+  - at this point, it will merge the adjacent parts that were split together so that the 
+    resulting array is sorted
+  - when all the parts are merged successfully, the resulting array will be sorted
 
-  BIG-OH CLASSIFICATION OF ALGORITHM:
+  BIG-OH CLASSIFICATION OF ALGORITHM: nlog(n)
   <INSERT YOUR EXECUTION TIME CATEGORIZATION OF MERGESORT HERE>
 
   Mean execution times for dataset of size n:
@@ -39,13 +43,34 @@ public class MergeSortTester
     
     public static void main( String[] args ) 
     {
-	int[] test1 = {9,6,7,2,8,5,1,3,4};
-	int[] test2 = {1,2,3,4,5,6,7,8,9};
+	int[] test1= new int [1];
+	int[] test10 = new int [10];
+	int[] test50 = new int [50];
+	double a = 0;
+	double b = 0;
+	
+	System.out.println("~~~~~~~~~~ARRAY n=1~~~~~~~~~~~~~~"); 
+	int counter = 0;
+	while (counter < 9){
+	    //populate an array with one item
+	    test1[0] = (int) (Math.random() *10);
+	    System.out.println("Testing on array ");
+	    MergeSort.printArray(test1);
+	    System.out.print(" ....\n");
+	    //start stopwatch
+	    a = System.currentTimeMillis();
+	    MergeSort.sort(test1);
+	    b= System.currentTimeMillis();
+	    System.out.println("Time: " + (b - a));
+	    counter ++;
+	}
+	/*
 	System.out.println("Standard nlogn time when n is 9");
 	System.out.println("Time merge sort takes to sort array of length 9");
 	System.out.println("\n\n\n");
 	System.out.println("Unsorted array len 9 : " + time(test1));
 	System.out.println("Sorted array len 9 : " + time(test2));
+	*/
     }//end main
 
 }//end class
