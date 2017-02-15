@@ -40,9 +40,12 @@ public class MergeSortTester
     public static void main( String[] args ) 
     {
 	int[] test1 = {9,6,7,2,8,5,1,3,4};
+	int[] test2 = {1,2,3,4,5,6,7,8,9};
 	System.out.println("Standard nlogn time when n is 9");
 	System.out.println("Time merge sort takes to sort array of length 9");
-	System.out.println(time(test1));
+	System.out.println("\n\n\n");
+	System.out.println("Unsorted array len 9 : " + time(test1));
+	System.out.println("Sorted array len 9 : " + time(test2));
     }//end main
 
 }//end class
