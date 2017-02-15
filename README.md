@@ -5,7 +5,7 @@ The data we've acquired is as follows:
 
 
 
-![Alt text](/../graphs.png?raw=true "Optional Title")
+![Alt text](https://github.com/sfomina/Supreme-Pancake/blob/master/graphs.PNG?raw=true"Graphs")
 
 
 
